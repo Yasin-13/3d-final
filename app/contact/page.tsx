@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import Navbar from "@/components/navbar"
+import Navbar from "@/app/components/navbar"
 import { MapPin, Phone, Instagram, Globe } from "lucide-react"
 
 const AnimatedSection = ({ children, className = "" }) => {

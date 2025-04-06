@@ -104,6 +104,57 @@ export default function CampusMap() {
                 </div>
               </Link>
 
+              <Link href="/second">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">SECOND FLOOR</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Science Labs</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Lecture Halls</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Halls</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/third">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">THIRD FLOOR</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Research Labs</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Project Rooms</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Offices</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/fourth">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">FOURTH FLOOR</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">library</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">Classrooms</p>
+                    </div>
+                    <div className="bg-gray-800 p-4 rounded-lg text-center">
+                      <p className="text-gray-300">laboratory</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
             </div>
           </div>
         </div>

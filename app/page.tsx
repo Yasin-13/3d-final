@@ -80,19 +80,30 @@ export default function Home() {
 
       {/* About Section */}
       <AnimatedSection id="about" className="py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About APSIT</h2>
-          <p className="text-gray-300 mb-6">
-            A. P. Shah Institute of Technology, Thane offers engineering degree courses in Civil, Mechanical, Computer
-            Engineering and Information Technology. These courses are accredited by National Board of Accreditation
-            (NBA). Accreditation is a conformation and assurance to students and parents regarding quality of teaching
-            learning practices followed in an Engineering Institute. Institute's commitment to deliver latest in
-            pedagogics is recognised by accreditation from STEM USA. Recently, the institute has also added courses in
-            Computer Science & Engineering with specialization in Artificial Intelligence & Machine Learning and Data
-            Science.
-          </p>
-        </div>
-      </AnimatedSection>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About APSIT</h2>
+
+    {/* About Image */}
+    <div className="mb-8">
+      <img 
+        src="Picture9.png" 
+        alt="About APSIT" 
+        className="w-full rounded-lg shadow-lg object-cover"
+      />
+    </div>
+
+    <p className="text-gray-300 mb-6">
+      A. P. Shah Institute of Technology, Thane offers engineering degree courses in Civil, Mechanical, Computer
+      Engineering and Information Technology. These courses are accredited by National Board of Accreditation
+      (NBA). Accreditation is a conformation and assurance to students and parents regarding quality of teaching
+      learning practices followed in an Engineering Institute. Institute's commitment to deliver latest in
+      pedagogics is recognised by accreditation from STEM USA. Recently, the institute has also added courses in
+      Computer Science & Engineering with specialization in Artificial Intelligence & Machine Learning and Data
+      Science.
+    </p>
+  </div>
+</AnimatedSection>
+
 
       {/* About Institute */}
       <AnimatedSection className="py-12 px-6 md:px-12 lg:px-20 bg-gray-900">

@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "TECQISE - Beyond Limits",
+  title: "ASPIT",
   description:
     "We don't follow trends – we create them, delivering solutions that are as sharp as they are groundbreaking.",
     generator: 'v0.dev'
