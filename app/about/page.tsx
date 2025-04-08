@@ -77,147 +77,120 @@ export default function About() {
 </AnimatedSection>
 
 
-      {/* Academic Initiatives */}
-      <AnimatedSection className="py-12 px-6 md:px-12 lg:px-20 bg-gray-900">
+      {/* More Initiatives */}
+<AnimatedSection className="py-12 px-6 md:px-12 lg:px-20">
   <div className="max-w-4xl mx-auto">
-    <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">ACADEMIC INITIATIVES</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-black/50 p-6 rounded-lg text-center">
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left">
+        <img 
+          src="/app.png" 
+          alt="App Development Club" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">App Development Club</h3>
+          <p className="text-gray-300">Learn to develop android and ios apps.</p>
+          <a href="https://www.instagram.com/app_development_club_it?igsh=OWcxb3o1NjNtajRr" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left">
+        <img 
+          src="/ant.png" 
+          alt="Antarang" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">Antarang</h3>
+          <p className="text-gray-300">Promotes emotional well-being</p>
+          <a href="https://www.instagram.com/antarang_apsit?igsh=cWc2aGVsbzVka3A5" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left">
+        <img 
+          src="/iit.png" 
+          alt="IIT-B Super Resource Centre" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">IIT-B Super Resource Centre</h3>
+          <p className="text-gray-300">Access to premium educational resources</p>
+          <a href="https://instagram.com/apsit_iitbresource" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
         <img 
           src="/moodle.png" 
-          alt="E-Learning Platform" 
-          className="mx-auto mb-4 w-20 h-20 object-cover rounded-md"
+          alt="PBL" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
         />
-        <h3 className="text-xl font-bold mb-4">E-Learning Platform</h3>
-        <p className="text-gray-300">Lecture notes on mobile, doubt solving forum</p>
+        <div>
+          <h3 className="text-xl font-bold mb-2">PBL</h3>
+          <p className="text-gray-300">Learning from Industry experts</p>
+          <a href="https://www.instagram.com/exalt_apsit?igsh=Nmt4Y3loY290bHo4" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
       </div>
 
-      <div className="bg-black/50 p-6 rounded-lg text-center">
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
         <img 
           src="/pbl.png" 
-          alt="Project Based Learning" 
-          className="mx-auto mb-4 w-20 h-20 object-cover rounded-md"
+          alt="E-learning Platform" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
         />
-        <h3 className="text-xl font-bold mb-4">Project Based Learning</h3>
-        <p className="text-gray-300">Learning from Industry experts</p>
+        <div>
+          <h3 className="text-xl font-bold mb-2">E-learning Platform</h3>
+          <p className="text-gray-300">Lecture notes on mobile, doubt solving forum</p>
+          <a href="https://instagram.com/apsit_elearning" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
       </div>
 
-      <div className="bg-black/50 p-6 rounded-lg text-center">
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
         <img 
-          src="/lan.png" 
-          alt="Foreign Language Courses" 
-          className="mx-auto mb-4 w-20 h-20 object-cover rounded-md"
+          src="/ent.png" 
+          alt="Entrepreneur Development Cell" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
         />
-        <h3 className="text-xl font-bold mb-4">Foreign Language Courses</h3>
-        <p className="text-gray-300">Expand your global communication skills</p>
+        <div>
+          <h3 className="text-xl font-bold mb-2">Entrepreneur Development Cell</h3>
+          <p className="text-gray-300">Develop entrepreneurial mindset</p>
+          <a href="https://instagram.com/apsit_edc" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
       </div>
+
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
+        <img 
+          src="/coun.png" 
+          alt="Counselling & Mentoring" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">Counselling & Mentoring</h3>
+          <p className="text-gray-300">Explore the underlying dynamics of oneself</p>
+          <a href="https://instagram.com/apsit_counselling" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </AnimatedSection>
 
-
-      {/* More Initiatives */}
-      <AnimatedSection className="py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4">
-  <img 
-    src="/app.png" 
-    alt="App Development Club" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">App Development Club</h3>
-    <p className="text-gray-300">Learn to develop android and ios apps.</p>
-  </div>
-</div>
-
-
-            <div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4">
-  <img 
-    src="/ant.png" 
-    alt="Antarang" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">Antarang</h3>
-    <p className="text-gray-300">Promotes emotional well-being</p>
-  </div>
-</div>
-
-
-
-<div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4">
-  <img 
-    src="/iit.png" 
-    alt="IIT-B Super Resource Centre" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">IIT-B Super Resource Centre</h3>
-    <p className="text-gray-300">Access to premium educational resources</p>
-  </div>
-</div>
-
-<div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4 mt-4">
-  <img 
-    src="/moodle.png" 
-    alt="Attendance Reward" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">PBL</h3>
-    <p className="text-gray-300">Learning
-                                                                                Learning from
-                                                                               Industry experts
-</p>
-  </div>
-</div>
-
-<div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4 mt-4">
-  <img 
-    src="/pbl.png" 
-    alt="Training and Certification" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">E-learing Platform</h3>
-    <p className="text-gray-300">Lecture notes on
-mobile, doubt solving
-forum
-</p>
-  </div>
-</div>
-
-<div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4 mt-4">
-  <img 
-    src="/ent.png" 
-    alt="Entrepreneur Development Cell" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-  <div>
-    <h3 className="text-xl font-bold mb-2">Entrepreneur Development Cell</h3>
-    <p className="text-gray-300">Develop entrepreneurial mindset</p>
-  </div>
-</div>
-
-<div className="bg-gray-800 p-6 rounded-lg flex items-center space-x-4 mt-4">
-  <img 
-    src="/coun.png" 
-    alt="Counselling & Mentoring" 
-    className="w-20 h-20 object-cover rounded-md" 
-  />
-
-  
-  <div>
-    <h3 className="text-xl font-bold mb-2">Counselling & Mentoring</h3>
-    <p className="text-gray-300">Explore the underlying dynamics of oneself</p>
-  </div>
-</div>
-</div>
-        </div>
-      </AnimatedSection>
     </main>
   )
 }

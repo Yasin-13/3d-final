@@ -24,6 +24,38 @@ const AnimatedSection = ({ children, className = "" }) => {
   )
 }
 
+const FloorSection = ({ title, href, facilities }) => (
+  <Link href={href}>
+    <div>
+      <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">{title}</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {facilities.map((facility, index) => (
+          <div key={index} className="bg-gray-800 p-4 rounded-lg text-center">
+            <p className="text-gray-300">{facility}</p>
+          </div>
+        ))}
+      </div>
+      <div className="mt-4">
+        <h4 className="text-lg font-bold mb-2">Timetable</h4>
+        {/* Add timetable component here */}
+        <div className="bg-gray-800 p-4 rounded-lg text-center">
+          <p className="text-gray-300">Timetable details...</p>
+        </div>
+      </div>
+      <div className="mt-4">
+        <h4 className="text-lg font-bold mb-2">Classroom Video</h4>
+        {/* Add classroom video component here */}
+        <div className="bg-gray-800 p-4 rounded-lg text-center">
+          <video controls className="w-full">
+            <source src="/path/to/classroom/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </Link>
+)
+
 export default function CampusMap() {
   return (
     <main className="min-h-screen bg-black text-white">
@@ -44,117 +76,41 @@ export default function CampusMap() {
             <h2 className="text-2xl font-bold mb-8 text-center">Interactive Campus Map</h2>
 
             <div className="space-y-8">
-              <Link href="/basement">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">BASEMENT</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Parking Area</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Maintenance</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Storage</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <FloorSection
+                title="BASEMENT"
+                href="/basement"
+                facilities={["Parking Area", "Maintenance", "Storage"]}
+              />
 
-              <Link href="/ground">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">GROUND FLOOR</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Reception</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Administrative Office</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Cafeteria</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Auditorium</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Library</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <FloorSection
+                title="GROUND FLOOR"
+                href="/ground"
+                facilities={["Reception", "Administrative Office", "Cafeteria", "Auditorium", "Library"]}
+              />
 
-              <Link href="/first">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">FIRST FLOOR</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Computer Labs</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Classrooms</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Faculty Offices</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Seminar Hall</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <FloorSection
+                title="FIRST FLOOR"
+                href="/first"
+                facilities={["Computer Labs", "Classrooms", "Faculty Offices", "Seminar Hall"]}
+              />
 
-              <Link href="/second">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">SECOND FLOOR</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Science Labs</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Lecture Halls</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Halls</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <FloorSection
+                title="SECOND FLOOR"
+                href="/second"
+                facilities={["Science Labs", "Lecture Halls", "Halls"]}
+              />
 
-              <Link href="/third">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">THIRD FLOOR</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Research Labs</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Project Rooms</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Offices</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              <FloorSection
+                title="THIRD FLOOR"
+                href="/third"
+                facilities={["Research Labs", "Project Rooms", "Offices"]}
+              />
 
-              <Link href="/fourth">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">FOURTH FLOOR</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">library</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">Classrooms</p>
-                    </div>
-                    <div className="bg-gray-800 p-4 rounded-lg text-center">
-                      <p className="text-gray-300">laboratory</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
+              <FloorSection
+                title="FOURTH FLOOR"
+                href="/fourth"
+                facilities={["Library", "Classrooms", "Laboratory"]}
+              />
             </div>
           </div>
         </div>

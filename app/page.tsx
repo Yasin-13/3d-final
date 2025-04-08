@@ -147,10 +147,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Admission Process</h2>
           <p className="text-gray-300">
-            Admissions to APSIT's B.E. programs are primarily based on entrance examinations such as MHT CET and JEE
-            Main. Prospective students must participate in the Maharashtra CAP Counselling process. Eligibility criteria
-            include a minimum of 50% marks in 10+2 examinations with Physics, Mathematics, and
-            Chemistry/Biology/Biotechnology/Technical Vocational subjects.
+          The admission process at A. P. Shah Institute of Technology (APSIT) is designed to ensure a seamless and transparent experience for aspiring students. The institute offers undergraduate engineering programs, and admissions are primarily conducted through the Centralized Admission Process (CAP) governed by the State Common Entrance Test Cell, Maharashtra. Candidates must qualify for the Maharashtra Common Entrance Test (MHT-CET) or Joint Entrance Examination (JEE Main) to be eligible for admission. Students from outside Maharashtra can also apply through the All India Quota, based on their JEE Main scores.
+Applicants must meet the minimum eligibility criteria, which include passing the Higher Secondary Certificate (HSC) examination or an equivalent qualification with Physics, Mathematics, and Chemistry/Biology/Computer Science as core subjects. The admission process involves online registration through the official website of the State Common Entrance Test Cell, Maharashtra, followed by document verification at designated centers. Based on their entrance exam scores and category-wise seat availability, students are allotted seats through the CAP rounds.
+APSIT also offers Institute-Level Quota admissions, where eligible candidates can apply directly to the college by submitting their academic records and entrance exam scores. For this, students must visit the APSIT campus, complete the application process, and participate in counseling sessions conducted by the admission committee. The institute follows a merit-based selection process, ensuring that deserving students secure admission.
+Once seat allotment is confirmed, students must report to the institute for document submission, fee payment, and final enrollment within the stipulated timeframe. The required documents include mark sheets, entrance exam scorecards, caste certificates (if applicable), domicile certificates, and other relevant documents. APSIT offers various scholarships and financial assistance schemes for eligible students to support their education.
+With a well-structured admission process, APSIT aims to attract talented and ambitious students, providing them with a technologically advanced learning environment to excel in their engineering careers. The institute ensures a student-centric approach, guiding applicants throughout the admission procedure for a smooth transition into their academic journey.
+
           </p>
         </div>
       </AnimatedSection>
@@ -160,9 +162,15 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Fee Structure</h2>
           <p className="text-gray-300">
-            The annual tuition fee for B.E. programs at APSIT is approximately ₹1.33 lakhs. Additional charges may
-            include exam fees and other miscellaneous expenses. Scholarships and financial aid options are available for
-            eligible students, including EBC (Economically Backward Class) and TFWS (Tuition Fee Waiver Scheme).
+          The fee structure at A. P. Shah Institute of Technology (APSIT) is as follows:
+Tuition Fees: ₹1,33,000 per annum. 
+University Fees: This includes charges for exams, enrollment, eligibility, cultural activities, disaster relief fund, cultural sports, e-charges, vice-chancellor fund, NSS fund, and national service scheme.
+Payment Details: Fees are to be paid via Demand Draft (DD) in favor of "A P SHAH INSTITUTE OF TECHNOLOGY". Or it can be paid online through our APSIT payment portal         https://admission.apsit.org.in/ jaha apsit highlight kiya h dekh upar wala line me waha yeh link add krdenaa
+
+Please note that the fee structure is subject to change as per the institute's regulations. 
+For the most accurate and updated information, it is advisable to consult the official APSIT website or contact the admissions office directly.
+
+
           </p>
         </div>
       </AnimatedSection>
@@ -172,9 +180,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Facilities</h2>
           <p className="text-gray-300">
-            APSIT offers state-of-the-art infrastructure, including smart classrooms, well-equipped laboratories, and
-            innovation centers. The campus also features multiple cafeterias and provides a Wi-Fi-enabled environment to
-            enhance the learning experience.
+          A. P. Shah Institute of Technology (APSIT) offers a wide range of modern facilities designed to provide students with a conducive learning environment and support their academic, research, and extracurricular activities. The institute boasts a state-of-the-art infrastructure with well-equipped laboratories, advanced computing facilities, and smart classrooms that integrate AI-driven teaching methodologies. The digital library provides access to an extensive collection of books, journals, e-resources, and research papers, fostering a culture of continuous learning.
+The spacious seminar halls and conference rooms are equipped with modern audio-visual aids, hosting guest lectures, technical workshops, and corporate interactions. APSIT has a centralized computing facility with high-speed internet access, supporting various academic and research-related activities. The robotics and AI labs provide students with hands-on experience in emerging technologies, ensuring they stay ahead in the competitive world of engineering.
+The institute provides a well-maintained cafeteria offering hygienic and nutritious meals, along with recreational spaces for students to unwind. The sports facilities include indoor and outdoor games, promoting physical fitness and teamwork. The college has dedicated student clubs and societies for technical, cultural, and artistic pursuits, encouraging holistic development.
+For student safety and well-being, APSIT has a 24/7 security system, CCTV surveillance, and a medical center on campus. The dedicated placement and career development cell ensures strong industry connections, facilitating job opportunities for students in leading multinational companies. Additionally, APSIT provides transportation facilities, hostel accommodations, and a grievance redressal system to ensure a comfortable and enriching educational experience. Through its world-class facilities, APSIT remains committed to fostering a progressive, innovative, and student-friendly environment for aspiring engineers.
+
           </p>
         </div>
       </AnimatedSection>
