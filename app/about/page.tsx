@@ -77,7 +77,7 @@ export default function About() {
 </AnimatedSection>
 
 
-      {/* More Initiatives */}
+{/* More Initiatives */}
 <AnimatedSection className="py-12 px-6 md:px-12 lg:px-20">
   <div className="max-w-4xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -136,8 +136,8 @@ export default function About() {
         <div>
           <h3 className="text-xl font-bold mb-2">PBL</h3>
           <p className="text-gray-300">Learning from Industry experts</p>
-          <a href="https://www.instagram.com/exalt_apsit?igsh=Nmt4Y3loY290bHo4" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
-            Follow on Instagram
+          <a href="https://elearn.apsit.edu.in/moodle/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Visit Platform
           </a>
         </div>
       </div>
@@ -166,7 +166,7 @@ export default function About() {
         <div>
           <h3 className="text-xl font-bold mb-2">Entrepreneur Development Cell</h3>
           <p className="text-gray-300">Develop entrepreneurial mindset</p>
-          <a href="https://instagram.com/apsit_edc" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+          <a href="https://www.instagram.com/edc_apsit?igsh=bGZmd3ZqYTBucndk" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
             Follow on Instagram
           </a>
         </div>
@@ -182,6 +182,38 @@ export default function About() {
           <h3 className="text-xl font-bold mb-2">Counselling & Mentoring</h3>
           <p className="text-gray-300">Explore the underlying dynamics of oneself</p>
           <a href="https://instagram.com/apsit_counselling" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      {/* New: EXALT */}
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
+        <img 
+          src="/hell.png" 
+          alt="EXALT - Technical Fest" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">EXALT</h3>
+          <p className="text-gray-300">Annual Technical Fest of APSIT, Thane ⚡</p>
+          <a href="https://www.instagram.com/exalt_apsit/?igsh=Nmt4Y3loY290bHo4" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+
+      {/* New: A.M.C. */}
+      <div className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center space-x-0 md:space-x-4 text-center md:text-left mt-4">
+        <img 
+          src="/mus.png" 
+          alt="A.M.C. - APSIT Music Club" 
+          className="w-20 h-20 object-cover rounded-md mb-4 md:mb-0" 
+        />
+        <div>
+          <h3 className="text-xl font-bold mb-2">A.M.C.</h3>
+          <p className="text-gray-300">APSIT's very own music club – Home to the APSIT BAND</p>
+          <a href="https://www.instagram.com/apsitmusicclub/?igsh=Zjh2eWIxeTI5Y2Jz" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:underline mt-2 block">
             Follow on Instagram
           </a>
         </div>

@@ -39,7 +39,7 @@ extend({ Model });
 export default function ModelLoader() {
   return (
     <Canvas
-      camera={{ position: [0, 50, 80], fov: 15 }}
+      camera={{ position: [0, 20, 40], fov: 25 }} // Adjusted camera position and fov
       gl={{ preserveDrawingBuffer: true }}
       style={{ background: "white" }} // Make background white
     >
