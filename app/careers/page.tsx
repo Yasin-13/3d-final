@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Navbar from "../components/navbar"
@@ -24,41 +25,68 @@ const AnimatedSection = ({ children, className = "" }) => {
   )
 }
 
-const FloorSection = ({ title, href, facilities, videos }) => (
-  <Link href={href}>
-    <div>
-      <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">{title}</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {facilities.map((facility, index) => (
-          <div key={index} className="bg-gray-800 p-4 rounded-lg text-center">
-            <p className="text-gray-300">{facility}</p>
-          </div>
-        ))}
-      </div>
-      <div className="mt-4">
-        <h4 className="text-lg font-bold mb-2">Timetable</h4>
-        {/* Add timetable component here */}
-        <div className="bg-gray-800 p-4 rounded-lg text-center">
-          <p className="text-gray-300">Timetable details...</p>
-        </div>
-      </div>
-      <div className="mt-4">
-        <h4 className="text-lg font-bold mb-2">Classroom Videos</h4>
-        {/* Add classroom video components here */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {videos.map((video, index) => (
+const FloorSection = ({ title, href, facilities, videos, videoHeadings }) => {
+  const [showVideos, setShowVideos] = useState(false)
+
+  const toggleVideos = () => {
+    setShowVideos(!showVideos)
+  }
+
+  return (
+    <Link href={href}>
+      <div>
+        <h3 className="text-xl font-bold mb-4 border-b border-gray-700 pb-2">{title}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {facilities.map((facility, index) => (
             <div key={index} className="bg-gray-800 p-4 rounded-lg text-center">
-              <video controls className="w-full">
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <p className="text-gray-300">{facility}</p>
             </div>
           ))}
         </div>
+        <div className="mt-4">
+          <h4 className="text-lg font-bold mb-2">Timetable</h4>
+          <div className="bg-gray-800 p-4 rounded-lg text-center">
+            <p className="text-gray-300">Timetable details...</p>
+          </div>
+        </div>
+        <div className="mt-4">
+          <h4 className="text-lg font-bold mb-2">
+Videos            <button
+              onClick={(e) => {
+                e.preventDefault()
+                toggleVideos()
+              }}
+              className="ml-4 px-4 py-2 text-sm bg-gray-700 rounded-lg hover:bg-gray-600"
+            >
+              {showVideos ? "Hide" : "Show"}
+            </button>
+          </h4>
+          {showVideos && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {videos.map((video, index) => (
+                <div key={index} className="bg-gray-800 p-4 rounded-lg text-center">
+                  <h5 className="text-md font-semibold mb-2 text-gray-300">
+                    {videoHeadings[index] || "Video"}
+                  </h5>
+                  <div className="relative w-full bg-black" style={{ aspectRatio: "9 / 16" }}>
+                    <video
+                      controls
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ objectFit: "contain" }}
+                    >
+                      <source src={video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  </Link>
-)
+    </Link>
+  )
+}
 
 export default function CampusMap() {
   return (
@@ -84,42 +112,48 @@ export default function CampusMap() {
                 title="BASEMENT"
                 href="/basement"
                 facilities={["Parking Area", "Maintenance", "Storage"]}
-                videos={["/videos/basement1.mp4", "/videos/basement2.mp4", "/videos/basement3.mp4", "/videos/basement4.mp4", "/videos/basement5.mp4"]}
+                videos={["/videos/basement1.mp4", "/videos/basement2.mp4", "/videos/basement3.mp4"]}
+                videoHeadings={["Labs", "Lobby", "Corridor"]}
               />
 
               <FloorSection
                 title="GROUND FLOOR"
                 href="/ground"
                 facilities={["Reception", "Administrative Office", "Cafeteria", "Auditorium", "Library"]}
-                videos={["/videos/ground1.mp4", "/videos/ground2.mp4", "/videos/ground3.mp4", "/videos/ground4.mp4", "/videos/ground5.mp4"]}
+                videos={["/videos/ground1.mp4", "/videos/ground2.mp4", "/videos/ground3.mp4"]}
+                videoHeadings={["Lobby", "Cafeteria", "Corridor"]}
               />
 
               <FloorSection
                 title="FIRST FLOOR"
                 href="/first"
                 facilities={["Computer Labs", "Classrooms", "Faculty Offices", "Seminar Hall"]}
-                videos={["/videos/first1.mp4", "/videos/first2.mp4", "/videos/first3.mp4", "/videos/first4.mp4", "/videos/first5.mp4"]}
+                videos={["/videos/first1.mp4", "/videos/first2.mp4", "/videos/first3.mp4"]}
+                videoHeadings={["Labs", "Classrooms", "Corridor"]}
               />
 
               <FloorSection
                 title="SECOND FLOOR"
                 href="/second"
                 facilities={["Science Labs", "Lecture Halls", "Halls"]}
-                videos={["/videos/second1.mp4", "/videos/second2.mp4", "/videos/second3.mp4", "/videos/second4.mp4", "/videos/second5.mp4"]}
+                videos={["/videos/second1.mp4", "/videos/second2.mp4", "/videos/second3.mp4"]}
+                videoHeadings={["Labs", "Lecture Halls", "Corridor"]}
               />
 
               <FloorSection
                 title="THIRD FLOOR"
                 href="/third"
                 facilities={["Research Labs", "Project Rooms", "Offices"]}
-                videos={["/videos/third1.mp4", "/videos/third2.mp4", "/videos/third3.mp4", "/videos/third4.mp4", "/videos/third5.mp4"]}
+                videos={["/videos/third1.mp4", "/videos/third2.mp4", "/videos/third3.mp4"]}
+                videoHeadings={["Labs", "Offices", "Corridor"]}
               />
 
               <FloorSection
                 title="FOURTH FLOOR"
                 href="/fourth"
                 facilities={["Library", "Classrooms", "Laboratory"]}
-                videos={["/videos/fourth1.mp4", "/videos/fourth2.mp4", "/videos/fourth3.mp4", "/videos/fourth4.mp4", "/videos/fourth5.mp4"]}
+                videos={["/videos/fourth1.mp4", "/videos/fourth2.mp4", "/videos/fourth3.mp4"]}
+                videoHeadings={["Library", "Classrooms", "Labs"]}
               />
             </div>
           </div>
