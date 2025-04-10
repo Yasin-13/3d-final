@@ -44,12 +44,6 @@ const FloorSection = ({ title, href, facilities, videos, videoHeadings }) => {
           ))}
         </div>
         <div className="mt-4">
-          <h4 className="text-lg font-bold mb-2">Timetable</h4>
-          <div className="bg-gray-800 p-4 rounded-lg text-center">
-            <p className="text-gray-300">Timetable details...</p>
-          </div>
-        </div>
-        <div className="mt-4">
           <h4 className="text-lg font-bold mb-2">
 Videos            <button
               onClick={(e) => {
@@ -85,6 +79,68 @@ Videos            <button
         </div>
       </div>
     </Link>
+  )
+}
+
+const TimetableSection = () => {
+  const departments = [
+    {
+      name: "Computer Science",
+      timetables: [
+        { name: "Semester 1", link: "/TT/computer_science_sem1.pdf" },
+        { name: "Semester 2", link: "/TT/computer_science_sem2.pdf" },
+      ],
+    },
+    {
+      name: "AIML",
+      timetables: [
+        { name: "Semester 1", link: "/TT/aiml_sem1.pdf" },
+        { name: "Semester 2", link: "/TT/aiml_sem2.pdf" },
+      ],
+    },
+    {
+      name: "Humanities and Applied Science",
+      timetables: [
+        { name: "Semester 1", link: "/TT/humanities_applied_science_sem1.pdf" },
+        { name: "Semester 2", link: "/TT/humanities_applied_science_sem2.pdf" },
+      ],
+    },
+    {
+      name: "Mechanical",
+      timetables: [
+        { name: "Semester 1", link: "/TT/mechanical_sem1.pdf" },
+        { name: "Semester 2", link: "/TT/mechanical_sem2.pdf" },
+      ],
+    },
+  ]
+
+  return (
+    <section className="py-12 px-6 md:px-12 lg:px-20">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-8 text-center">Timetable</h2>
+        {departments.map((department, index) => (
+          <div
+            key={index}
+            className="bg-gray-900 p-4 rounded-lg mb-8"
+          >
+            <h3 className="text-lg font-bold mb-2 text-center">{department.name}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {department.timetables.map((timetable, idx) => (
+                <a
+                  key={idx}
+                  href={timetable.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700"
+                >
+                  <p className="text-gray-300">{timetable.name}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 
@@ -159,6 +215,9 @@ export default function CampusMap() {
           </div>
         </div>
       </AnimatedSection>
+
+      {/* Timetable Section */}
+      <TimetableSection />
     </main>
   )
 }
